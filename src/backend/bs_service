@@ -223,7 +223,7 @@ sub run_source_update {
   
   # clean up
   BSUtil::cleandir($myworkdir);
-  rmdir($myworkdir);
+  rmdir($myworkdir) || print "Failed to cleanup $myworkdir: $?\n";
 }
 
 sub hello {
