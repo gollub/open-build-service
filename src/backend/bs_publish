@@ -1427,6 +1427,8 @@ sub publish {
 	  $p = "$bin";
 	} elsif ($bin =~ /\.dsc(?:\.sha256)?$/) {
 	  $p = "$bin";
+	} elsif ($bin =~ /\.packages$/) {
+	  $p = "$bin";
 	} elsif ($bin =~ /\.(?:box|json|ovf|qcow2|vmx|vmdk)(?:\.sha256)?$/) {
 	  $p = "$bin";
         } elsif ($bin =~ /^(.*)\.report$/) {
